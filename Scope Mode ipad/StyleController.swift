@@ -42,6 +42,8 @@ class StyleController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // im sorry this broke - but we dont need any of the conenctions anymore
+        
     
     
     
