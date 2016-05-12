@@ -3,10 +3,8 @@ import UIKit
 
 class PartProductionController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
-    var budgetVar = String()
-    var platformVar = String()
-    var descriptionVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()

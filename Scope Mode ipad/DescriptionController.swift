@@ -3,10 +3,8 @@ import UIKit
 
 class DescriptionController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
-    var budgetVar = String()
-    var platformVar = String()
-    
     @IBOutlet weak var descriptionText: UITextView!
     
     override func viewDidLoad() {

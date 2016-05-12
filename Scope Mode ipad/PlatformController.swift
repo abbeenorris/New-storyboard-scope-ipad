@@ -3,8 +3,8 @@ import UIKit
 
 class PlatformController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
-    var budgetVar = String()
     var platformVar = String()
     
     

@@ -5,11 +5,8 @@ import UIKit
 
 class StyleController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
-    var budgetVar = String()
-    var platformVar = String()
-    var descriptionVar = String()
-    var styleVar = String()
     
     @IBAction func liveBtn(sender: AnyObject) {
         

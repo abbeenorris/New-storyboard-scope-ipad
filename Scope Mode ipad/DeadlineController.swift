@@ -3,6 +3,8 @@ import UIKit
 
 class DeadlineController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
+    var videoTypeVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
