@@ -65,6 +65,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let clientName : SummaryController = segue.destinationViewController as! SummaryController
         clientName.clientNameVar = clientNameVar
+        
+        let videoType : SummaryController = segue.destinationViewController as! SummaryController
+        videoType.videoTypeVar = videoTypeVar
     }
     
 }

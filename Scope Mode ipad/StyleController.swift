@@ -21,13 +21,19 @@ class StyleController: UIViewController {
         if segue.identifier == "LiveAction" {
             let destViewController = segue.destinationViewController as! CharactersController
             destViewController.projectTitleVar = projectTitleVar
+            
             let clientName : CharactersController = segue.destinationViewController as! CharactersController
             clientName.clientNameVar = clientNameVar
+            
+            let videoType : CharactersController = segue.destinationViewController as! CharactersController
+            videoType.videoTypeVar = videoTypeVar
         }
         
         if segue.identifier == "Animation" {
             let destViewController = segue.destinationViewController as! CharactersController
             destViewController.projectTitleVar = projectTitleVar
+            
+
         }
         
         if segue.identifier == "MixedMedia" {

@@ -16,11 +16,11 @@ class DescriptionController: UIViewController {
         let projectTitle : PartProductionController = segue.destinationViewController as! PartProductionController
         projectTitle.projectTitleVar = projectTitleVar
         
-        let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
-        videoType.videoTypeVar = videoTypeVar
-        
         let clientName : PartProductionController = segue.destinationViewController as! PartProductionController
         clientName.clientNameVar = clientNameVar
+        
+        let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
+        videoType.videoTypeVar = videoTypeVar
         
     }
 }

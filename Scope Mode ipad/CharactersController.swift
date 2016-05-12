@@ -17,6 +17,9 @@ class CharactersController: UIViewController {
         
         let clientName : PlatformController = segue.destinationViewController as! PlatformController
         clientName.clientNameVar = clientNameVar
+        
+        let videoType : PlatformController = segue.destinationViewController as! PlatformController
+        videoType.videoTypeVar = videoTypeVar
     }
     
 }

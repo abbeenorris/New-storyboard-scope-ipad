@@ -1470,13 +1470,16 @@
                                 <color key="progressTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-iz-OE0">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1.3" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-iz-OE0">
                                 <rect key="frame" x="320" y="434" width="385" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="381" id="Bif-8S-FKF"/>
                                 </constraints>
                                 <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="BudgetChanged:" destination="OAy-rf-7K7" eventType="valueChanged" id="hEk-yc-hvl"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URR-7v-mdJ">
                                 <rect key="frame" x="923" y="614" width="30" height="30"/>
@@ -1485,11 +1488,21 @@
                                     <segue destination="5lS-Pi-mrj" kind="show" id="ay2-Nh-7UI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohg-oS-qjy">
+                                <rect key="frame" x="149" y="477" width="726" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="726" id="3g3-BM-RBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Sd2-6Y-BTX" secondAttribute="bottom" constant="20" symbolic="YES" id="27v-de-yul"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URR-7v-mdJ" secondAttribute="trailing" constant="51" id="4bk-zs-gxw"/>
+                            <constraint firstItem="Ohg-oS-qjy" firstAttribute="centerX" secondItem="B7R-iz-OE0" secondAttribute="centerX" id="5M9-cH-6h5"/>
                             <constraint firstItem="ySb-d2-eBi" firstAttribute="leading" secondItem="lEe-Pi-vzJ" secondAttribute="leadingMargin" constant="-6" id="CJ5-OJ-X7o"/>
                             <constraint firstAttribute="trailing" secondItem="EXN-UF-Pas" secondAttribute="trailing" id="GbF-qd-ogR"/>
                             <constraint firstItem="EXN-UF-Pas" firstAttribute="centerX" secondItem="yj3-dO-3UI" secondAttribute="centerX" id="MCm-vQ-vm0"/>
@@ -1499,6 +1512,7 @@
                             <constraint firstItem="ySb-d2-eBi" firstAttribute="top" secondItem="lEe-Pi-vzJ" secondAttribute="topMargin" constant="9" id="Qgp-lo-rxw"/>
                             <constraint firstItem="yj3-dO-3UI" firstAttribute="centerX" secondItem="B7R-iz-OE0" secondAttribute="centerX" id="Sj8-cO-fik"/>
                             <constraint firstItem="woq-Q8-IWQ" firstAttribute="top" secondItem="URR-7v-mdJ" secondAttribute="bottom" constant="80" id="Uxa-Jt-KWI"/>
+                            <constraint firstItem="Ohg-oS-qjy" firstAttribute="top" secondItem="B7R-iz-OE0" secondAttribute="bottom" constant="13" id="aDR-5N-obG"/>
                             <constraint firstItem="B7R-iz-OE0" firstAttribute="centerX" secondItem="Sd2-6Y-BTX" secondAttribute="centerX" id="afR-Fa-obt"/>
                             <constraint firstItem="EXN-UF-Pas" firstAttribute="top" secondItem="ySb-d2-eBi" secondAttribute="bottom" constant="8" symbolic="YES" id="ftM-ZR-9oH"/>
                             <constraint firstItem="woq-Q8-IWQ" firstAttribute="top" secondItem="B7R-iz-OE0" secondAttribute="bottom" constant="260" id="z1f-qs-OjS"/>
@@ -1506,6 +1520,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="Ohg-oS-qjy" id="nLn-f7-rrg"/>
+                        <outlet property="timeSlider" destination="B7R-iz-OE0" id="mf3-1t-MRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYg-ZY-aaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

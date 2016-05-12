@@ -5,6 +5,7 @@ class DeadlineController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,9 @@ class DeadlineController: UIViewController {
         
         let clientName : DescriptionController = segue.destinationViewController as! DescriptionController
         clientName.clientNameVar = clientNameVar
+        
+        let videoType : DescriptionController = segue.destinationViewController as! DescriptionController
+        videoType.videoTypeVar = videoTypeVar
         
     }
 }

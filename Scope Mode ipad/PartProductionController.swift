@@ -18,5 +18,8 @@ class PartProductionController: UIViewController {
         let clientName : StyleController = segue.destinationViewController as! StyleController
         clientName.clientNameVar = clientNameVar
         
+        let videoType : StyleController = segue.destinationViewController as! StyleController
+        videoType.videoTypeVar = videoTypeVar
+        
     }
 }
