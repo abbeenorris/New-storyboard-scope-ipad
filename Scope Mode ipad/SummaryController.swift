@@ -25,7 +25,7 @@ class SummaryController: UIViewController {
     @IBOutlet weak var videoSelectedText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(projectTitleVar)
+        
         
         projectText.text! = projectTitleVar
         

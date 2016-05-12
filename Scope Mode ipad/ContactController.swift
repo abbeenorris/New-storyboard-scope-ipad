@@ -14,7 +14,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(projectTitleVar)
+        
         projectTitle = projectTitleVar
     }
     

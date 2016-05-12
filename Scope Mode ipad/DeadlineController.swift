@@ -8,7 +8,7 @@ class DeadlineController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           print(projectTitleVar)
+           
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -7,7 +7,7 @@ class VideoTypeController: UIViewController {
     var videoTypeVar = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(projectTitleVar)
+        
         
     }
     

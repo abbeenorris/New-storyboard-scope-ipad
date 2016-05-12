@@ -12,7 +12,7 @@ class StyleController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           print(projectTitleVar)
+           
     
     
     }
