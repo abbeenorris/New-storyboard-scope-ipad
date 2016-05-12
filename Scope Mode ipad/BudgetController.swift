@@ -3,9 +3,10 @@ import UIKit
 
 class BudgetController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
-    var budgetVar = String()
     var platformVar = String()
+    var budgetVar = String()
     
     @IBOutlet weak var budgetSlider: UISlider!
     @IBOutlet weak var budgetLabel: UILabel!

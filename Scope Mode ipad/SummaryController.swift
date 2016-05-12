@@ -3,10 +3,10 @@ import UIKit
 
 class SummaryController: UIViewController {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
-    var budgetVar = String()
     var platformVar = String()
-    var descriptionVar = String()
+    var budgetVar = String()
     
     @IBOutlet weak var projectText: UITextField!
     @IBOutlet weak var videoTypeText: UITextField!
