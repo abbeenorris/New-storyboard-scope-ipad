@@ -766,11 +766,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lv-zI-S7Z">
-                                <rect key="frame" x="755" y="581" width="49" height="30"/>
+                                <rect key="frame" x="755" y="587" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="sendEmailButtonTapped:" destination="c7x-48-w2Y" eventType="touchUpInside" id="kei-T0-QEK"/>
-                                    <segue destination="QMS-0f-ith" kind="show" id="fVw-Yh-HKt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-sK-cXK">
+                                <rect key="frame" x="766" y="630" width="30" height="30"/>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <segue destination="QMS-0f-ith" kind="show" id="zvG-Pn-u9e"/>
                                 </connections>
                             </button>
                         </subviews>
