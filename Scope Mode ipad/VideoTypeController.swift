@@ -7,6 +7,7 @@ class VideoTypeController: UIViewController {
     var videoTypeVar = String()
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(projectTitleVar)
         
     }
     
@@ -43,6 +44,7 @@ class VideoTypeController: UIViewController {
             videoTypeVar = "Viral"
         }
     }
+   
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : RunningTimeController = segue.destinationViewController as! RunningTimeController

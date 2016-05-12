@@ -8,38 +8,31 @@ class StyleController: UIViewController {
     var clientNameVar = String()
     var videoTypeVar = String()
     
-    @IBAction func liveBtn(sender: AnyObject) {
-        
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let DestViewController : CharactersController = segue.destinationViewController as! CharactersController
-            DestViewController.projectTitleVar = projectTitleVar
-            
-        }
-    }
-    @IBAction func aniBtn(sender: AnyObject) {
-        
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let DestViewController2 : CharactersController = segue.destinationViewController as! CharactersController
-            DestViewController2.projectTitleVar = projectTitleVar
-        
-        }
-    }
-    
-    @IBAction func mixedBtn(sender: AnyObject) {
-        
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let DestViewController3 : CharactersController = segue.destinationViewController as! CharactersController
-            DestViewController3.projectTitleVar = projectTitleVar
-            
-        }
-        
-        
-    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+           print(projectTitleVar)
     
     
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "LiveAction" {
+            let destViewController = segue.destinationViewController as! CharactersController
+            destViewController.projectTitleVar = projectTitleVar
+        }
+        
+        if segue.identifier == "Animation" {
+            let destViewController = segue.destinationViewController as! CharactersController
+            destViewController.projectTitleVar = projectTitleVar
+        }
+        
+        if segue.identifier == "MixedMedia" {
+            let destViewController = segue.destinationViewController as! CharactersController
+            destViewController.projectTitleVar = projectTitleVar
+        }
+        
+        
     }
 }

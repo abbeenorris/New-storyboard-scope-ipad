@@ -177,28 +177,21 @@
                                 <rect key="frame" x="474" y="380" width="76" height="30"/>
                                 <state key="normal" title="Live Action"/>
                                 <connections>
-                                    <action selector="liveBtn:" destination="bzZ-L3-x5x" eventType="touchUpInside" id="PXU-iC-9M0"/>
+                                    <segue destination="qjV-Bd-DT3" kind="show" identifier="LiveAction" id="ZXe-e5-BF4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISn-pC-f8o">
                                 <rect key="frame" x="478" y="445" width="69" height="30"/>
                                 <state key="normal" title="Animation"/>
                                 <connections>
-                                    <action selector="aniBtn:" destination="bzZ-L3-x5x" eventType="touchUpInside" id="WFj-Ps-KT0"/>
+                                    <segue destination="qjV-Bd-DT3" kind="show" identifier="Animation" id="sul-5v-sSu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SX1-c5-DKZ">
                                 <rect key="frame" x="457" y="508" width="111" height="30"/>
                                 <state key="normal" title="Motion graphics"/>
                                 <connections>
-                                    <action selector="mixedBtn:" destination="bzZ-L3-x5x" eventType="touchUpInside" id="BSP-F6-t2o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrr-bb-esy">
-                                <rect key="frame" x="918" y="634" width="30" height="30"/>
-                                <state key="normal" title="next"/>
-                                <connections>
-                                    <segue destination="qjV-Bd-DT3" kind="show" id="QcF-uf-J0S"/>
+                                    <segue destination="qjV-Bd-DT3" kind="show" identifier="MixedMedia" id="lPv-nY-IUF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -212,7 +205,6 @@
                             <constraint firstItem="ISn-pC-f8o" firstAttribute="top" secondItem="5KZ-uv-Egl" secondAttribute="bottom" constant="35" id="BCC-Ko-xmW"/>
                             <constraint firstItem="XFO-nB-qbf" firstAttribute="top" secondItem="xZa-bj-cE7" secondAttribute="bottom" constant="13" id="FCd-eV-Xrf"/>
                             <constraint firstItem="ISn-pC-f8o" firstAttribute="centerX" secondItem="SX1-c5-DKZ" secondAttribute="centerX" id="Fhw-QD-D7O"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yrr-bb-esy" secondAttribute="trailing" constant="56" id="Fz7-fL-nws"/>
                             <constraint firstItem="5Ji-SO-Mnj" firstAttribute="top" secondItem="XFO-nB-qbf" secondAttribute="bottom" constant="78" id="Q6m-lk-fc4"/>
                             <constraint firstItem="5KZ-uv-Egl" firstAttribute="top" secondItem="5Ji-SO-Mnj" secondAttribute="bottom" constant="54" id="TTS-gv-LkQ"/>
                             <constraint firstItem="SX1-c5-DKZ" firstAttribute="top" secondItem="ISn-pC-f8o" secondAttribute="bottom" constant="33" id="cRi-Wb-tzF"/>
@@ -220,7 +212,6 @@
                             <constraint firstItem="XFO-nB-qbf" firstAttribute="centerX" secondItem="5Ji-SO-Mnj" secondAttribute="centerX" id="ef8-YR-eG3"/>
                             <constraint firstItem="5Ji-SO-Mnj" firstAttribute="centerX" secondItem="5KZ-uv-Egl" secondAttribute="centerX" id="i5X-IG-euk"/>
                             <constraint firstItem="xZa-bj-cE7" firstAttribute="top" secondItem="8cx-iL-haJ" secondAttribute="topMargin" constant="9" id="iwG-WT-rEa"/>
-                            <constraint firstItem="u2Q-Fh-aSk" firstAttribute="top" secondItem="Yrr-bb-esy" secondAttribute="bottom" constant="60" id="jzb-Qj-KVv"/>
                             <constraint firstAttribute="bottom" secondItem="U5d-07-Cd6" secondAttribute="bottom" constant="20" symbolic="YES" id="tsG-LY-Xoo"/>
                         </constraints>
                     </view>
@@ -795,7 +786,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pV-S4-Z1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="-1053"/>
+            <point key="canvasLocation" x="1070" y="-971"/>
         </scene>
         <!--Part Production Controller-->
         <scene sceneID="IaP-Kk-VUc">
@@ -1737,4 +1728,7 @@
     <resources>
         <image name="Image" width="858" height="283"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lPv-nY-IUF"/>
+    </inferredMetricsTieBreakers>
 </document>
