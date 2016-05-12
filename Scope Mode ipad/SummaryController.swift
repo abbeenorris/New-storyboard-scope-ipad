@@ -25,12 +25,10 @@ class SummaryController: UIViewController {
     @IBOutlet weak var videoSelectedText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(projectTitleVar)
+        
+        projectText.text! = projectTitleVar
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let DestViewController : ContactController = segue.destinationViewController as! ContactController
-        DestViewController.projectTitleVar = projectTitleVar
-        
-    }
 }
