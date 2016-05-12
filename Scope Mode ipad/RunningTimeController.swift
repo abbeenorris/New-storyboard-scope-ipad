@@ -1,26 +1,17 @@
 import Foundation
 import UIKit
 
-class RunningTimeController: UIViewController {
+class RunningTimeController: UIViewController, UIPickerViewDelegate {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
     var timeVar = String()
     
-    @IBOutlet weak var timeSlider: UISlider!
-    @IBOutlet weak var timeLabel: UILabel!
-    let step: Float = 0
     
-    @IBAction func BudgetChanged(sender: AnyObject) {
-        let currentlVaule = (timeSlider.value / step) * step
-        timeLabel.text = "\(currentlVaule)"
-        timeVar = timeLabel.text!
-    }
+    @IBOutlet weak var runningTimePicker: UIDatePicker!
+    
 
-    
-    
-    
-    
+  
     
     
     
