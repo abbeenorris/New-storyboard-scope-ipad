@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class BudgetController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
     var videoTypeVar = String()
     var budgetVar = String()
     var platformVar = String()
@@ -22,7 +22,7 @@ class BudgetController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : ContactController = segue.destinationViewController as! ContactController
-        projectTitle.hiddenProjectVar = hiddenProjectVar
+        projectTitle.projectTitleVar = projectTitleVar
         
         let videoType : ContactController = segue.destinationViewController as! ContactController
         videoType.videoTypeVar = videoTypeVar

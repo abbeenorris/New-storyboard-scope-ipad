@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class DescriptionController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
     var videoTypeVar = String()
     var budgetVar = String()
     var platformVar = String()
@@ -15,7 +15,7 @@ class DescriptionController: UIViewController {
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : PartProductionController = segue.destinationViewController as! PartProductionController
-        projectTitle.hiddenProjectVar = hiddenProjectVar
+        projectTitle.projectTitleVar = projectTitleVar
         
         let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
         videoType.videoTypeVar = videoTypeVar

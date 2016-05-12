@@ -2,7 +2,8 @@ import Foundation
 import UIKit
 
 class RunningTimeController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
     
     override func viewDidLoad() {
@@ -11,7 +12,7 @@ class RunningTimeController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : DeadlineController = segue.destinationViewController as! DeadlineController
-        DestViewController.hiddenProjectVar = hiddenProjectVar
+        DestViewController.projectTitleVar = projectTitleVar
         
     }
     

@@ -2,7 +2,8 @@ import Foundation
 import UIKit
 
 class VideoTypeController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +46,9 @@ class VideoTypeController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : RunningTimeController = segue.destinationViewController as! RunningTimeController
-        projectTitle.hiddenProjectVar = hiddenProjectVar
-        
+        projectTitle.projectTitleVar = projectTitleVar
+        let clientName : VideoTypeController = segue.destinationViewController as! VideoTypeController
+        clientName.clientNameVar = clientNameVar
         let videoType : RunningTimeController = segue.destinationViewController as! RunningTimeController
         videoType.videoTypeVar = videoTypeVar
         

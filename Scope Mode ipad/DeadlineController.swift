@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class DeadlineController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -10,7 +10,7 @@ class DeadlineController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : DescriptionController = segue.destinationViewController as! DescriptionController
-        DestViewController.hiddenProjectVar = hiddenProjectVar
+        DestViewController.projectTitleVar = projectTitleVar
         
     }
 }

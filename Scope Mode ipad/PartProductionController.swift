@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class PartProductionController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
     var videoTypeVar = String()
     var budgetVar = String()
     var platformVar = String()
@@ -14,7 +14,7 @@ class PartProductionController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : StyleController = segue.destinationViewController as! StyleController
-        DestViewController.hiddenProjectVar = hiddenProjectVar
+        DestViewController.projectTitleVar = projectTitleVar
         
     }
 }

@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class SummaryController: UIViewController {
-    var hiddenProjectVar =  String()
+    var projectTitleVar =  String()
     var videoTypeVar = String()
     var budgetVar = String()
     var platformVar = String()
@@ -30,7 +30,7 @@ class SummaryController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : ContactController = segue.destinationViewController as! ContactController
-        DestViewController.hiddenProjectVar = hiddenProjectVar
+        DestViewController.projectTitleVar = projectTitleVar
         
     }
 }
