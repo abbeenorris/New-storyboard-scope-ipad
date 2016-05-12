@@ -26,6 +26,9 @@ class BudgetController: UIViewController {
         let projectTitle : ContactController = segue.destinationViewController as! ContactController
         projectTitle.projectTitleVar = projectTitleVar
         
+        let clientName : ContactController = segue.destinationViewController as! ContactController
+        clientName.clientNameVar = clientNameVar
+        
         let videoType : ContactController = segue.destinationViewController as! ContactController
         videoType.videoTypeVar = videoTypeVar
         

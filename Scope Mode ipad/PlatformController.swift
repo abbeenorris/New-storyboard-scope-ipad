@@ -74,6 +74,9 @@ class PlatformController: UIViewController {
         let projectTitle : BudgetController = segue.destinationViewController as! BudgetController
         projectTitle.projectTitleVar = projectTitleVar
         
+        let clientName : BudgetController = segue.destinationViewController as! BudgetController
+        clientName.clientNameVar = clientNameVar
+        
         let videoType : BudgetController = segue.destinationViewController as! BudgetController
         videoType.videoTypeVar = videoTypeVar
         

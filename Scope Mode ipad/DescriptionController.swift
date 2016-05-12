@@ -19,5 +19,8 @@ class DescriptionController: UIViewController {
         let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
         videoType.videoTypeVar = videoTypeVar
         
+        let clientName : PartProductionController = segue.destinationViewController as! PartProductionController
+        clientName.clientNameVar = clientNameVar
+        
     }
 }

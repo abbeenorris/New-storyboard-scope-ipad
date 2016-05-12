@@ -15,5 +15,8 @@ class PartProductionController: UIViewController {
         let DestViewController : StyleController = segue.destinationViewController as! StyleController
         DestViewController.projectTitleVar = projectTitleVar
         
+        let clientName : StyleController = segue.destinationViewController as! StyleController
+        clientName.clientNameVar = clientNameVar
+        
     }
 }

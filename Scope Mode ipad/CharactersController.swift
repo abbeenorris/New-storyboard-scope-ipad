@@ -15,6 +15,8 @@ class CharactersController: UIViewController {
         let DestViewController : PlatformController = segue.destinationViewController as! PlatformController
         DestViewController.projectTitleVar = projectTitleVar
         
+        let clientName : PlatformController = segue.destinationViewController as! PlatformController
+        clientName.clientNameVar = clientNameVar
     }
     
 }

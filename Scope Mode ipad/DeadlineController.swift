@@ -15,5 +15,8 @@ class DeadlineController: UIViewController {
         let DestViewController : DescriptionController = segue.destinationViewController as! DescriptionController
         DestViewController.projectTitleVar = projectTitleVar
         
+        let clientName : DescriptionController = segue.destinationViewController as! DescriptionController
+        clientName.clientNameVar = clientNameVar
+        
     }
 }

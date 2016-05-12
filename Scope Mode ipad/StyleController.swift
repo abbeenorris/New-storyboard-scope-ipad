@@ -21,6 +21,8 @@ class StyleController: UIViewController {
         if segue.identifier == "LiveAction" {
             let destViewController = segue.destinationViewController as! CharactersController
             destViewController.projectTitleVar = projectTitleVar
+            let clientName : CharactersController = segue.destinationViewController as! CharactersController
+            clientName.clientNameVar = clientNameVar
         }
         
         if segue.identifier == "Animation" {

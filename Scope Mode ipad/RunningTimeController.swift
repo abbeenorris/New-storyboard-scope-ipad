@@ -15,6 +15,9 @@ class RunningTimeController: UIViewController {
         let DestViewController : DeadlineController = segue.destinationViewController as! DeadlineController
         DestViewController.projectTitleVar = projectTitleVar
         
+        let clientName : DeadlineController = segue.destinationViewController as! DeadlineController
+        clientName.clientNameVar = clientNameVar
+        
     }
     
 }

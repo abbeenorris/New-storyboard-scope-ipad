@@ -4,6 +4,7 @@ import MessageUI
 
 class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var projectTitleVar =  String()
+    var clientNameVar = String()
     var videoTypeVar = String()
     var budgetVar = String()
     var platformVar = String()
@@ -61,6 +62,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : SummaryController = segue.destinationViewController as! SummaryController
         projectTitle.projectTitleVar = projectTitleVar
+        
+        let clientName : SummaryController = segue.destinationViewController as! SummaryController
+        clientName.clientNameVar = clientNameVar
     }
     
 }
