@@ -76,9 +76,6 @@ class PlatformController: UIViewController {
         let videoType : BudgetController = segue.destinationViewController as! BudgetController
         videoType.videoTypeVar = videoTypeVar
         
-        let budget : BudgetController = segue.destinationViewController as! BudgetController
-        budget.budgetVar = budgetVar
-        
         let platform : BudgetController = segue.destinationViewController as! BudgetController
         platform.platformVar = platformVar
         
