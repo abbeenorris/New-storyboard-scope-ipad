@@ -9,10 +9,8 @@ class DeadlineController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let DestViewController : PostProductionController = segue.destinationViewController as! PostProductionController
+        let DestViewController : DescriptionController = segue.destinationViewController as! DescriptionController
         DestViewController.hiddenProjectVar = hiddenProjectVar
         
     }
 }
-
-//another error sorry 

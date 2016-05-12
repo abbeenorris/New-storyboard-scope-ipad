@@ -13,7 +13,6 @@
 		7E4203011CE3B6F300B3DE8F /* DescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203001CE3B6F300B3DE8F /* DescriptionController.swift */; };
 		7E4203031CE3B81B00B3DE8F /* StyleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203021CE3B81B00B3DE8F /* StyleController.swift */; };
 		7E42030D1CE3C48900B3DE8F /* CharactersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42030C1CE3C48900B3DE8F /* CharactersController.swift */; };
-		7E4203111CE3C50100B3DE8F /* ScenesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203101CE3C50100B3DE8F /* ScenesController.swift */; };
 		7E4203131CE3C52800B3DE8F /* PartProductionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203121CE3C52800B3DE8F /* PartProductionController.swift */; };
 		7E4203151CE3C55E00B3DE8F /* DeadlineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203141CE3C55E00B3DE8F /* DeadlineController.swift */; };
 		7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */; };
@@ -52,7 +51,6 @@
 		7E4203001CE3B6F300B3DE8F /* DescriptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionController.swift; sourceTree = "<group>"; };
 		7E4203021CE3B81B00B3DE8F /* StyleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleController.swift; sourceTree = "<group>"; };
 		7E42030C1CE3C48900B3DE8F /* CharactersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersController.swift; sourceTree = "<group>"; };
-		7E4203101CE3C50100B3DE8F /* ScenesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenesController.swift; sourceTree = "<group>"; };
 		7E4203121CE3C52800B3DE8F /* PartProductionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartProductionController.swift; sourceTree = "<group>"; };
 		7E4203141CE3C55E00B3DE8F /* DeadlineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlineController.swift; sourceTree = "<group>"; };
 		7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningTimeController.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */,
 				7E42031C1CE3C85A00B3DE8F /* ContactController.swift */,
 				7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */,
-				7E4203101CE3C50100B3DE8F /* ScenesController.swift */,
 				F2C2E5331CE3270000F93776 /* Main.storyboard */,
 				F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */,
 				F2C2E5361CE3270000F93776 /* Assets.xcassets */,
@@ -292,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E4203111CE3C50100B3DE8F /* ScenesController.swift in Sources */,
 				7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */,
 				7E42030D1CE3C48900B3DE8F /* CharactersController.swift in Sources */,
 				F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */,

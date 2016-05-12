@@ -9,11 +9,12 @@ class StyleController: UIViewController {
     var budgetVar = String()
     var platformVar = String()
     var descriptionVar = String()
+    var styleVar = String()
     
     @IBAction func liveBtn(sender: AnyObject) {
         
         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let DestViewController : LiveActionController = segue.destinationViewController as! LiveActionController
+            let DestViewController : CharactersController = segue.destinationViewController as! CharactersController
             DestViewController.hiddenProjectVar = hiddenProjectVar
             
         }
@@ -21,7 +22,7 @@ class StyleController: UIViewController {
     @IBAction func aniBtn(sender: AnyObject) {
         
         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let DestViewController2 : AnimationController = segue.destinationViewController as! AnimationController
+            let DestViewController2 : CharactersController = segue.destinationViewController as! CharactersController
             DestViewController2.hiddenProjectVar = hiddenProjectVar
         
         }
@@ -30,7 +31,7 @@ class StyleController: UIViewController {
     @IBAction func mixedBtn(sender: AnyObject) {
         
         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let DestViewController3 : MixedMediaController = segue.destinationViewController as! MixedMediaController
+            let DestViewController3 : CharactersController = segue.destinationViewController as! CharactersController
             DestViewController3.hiddenProjectVar = hiddenProjectVar
             
         }
@@ -41,11 +42,6 @@ class StyleController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // im sorry this broke - but we dont need any of the conenctions anymore
-        
-    
-    
     
     
     }
