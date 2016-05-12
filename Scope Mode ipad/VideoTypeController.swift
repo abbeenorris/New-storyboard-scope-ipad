@@ -44,10 +44,10 @@ class VideoTypeController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : BudgetController = segue.destinationViewController as! BudgetController
+        let projectTitle : RunningTimeController = segue.destinationViewController as! RunningTimeController
         projectTitle.hiddenProjectVar = hiddenProjectVar
         
-        let videoType : BudgetController = segue.destinationViewController as! BudgetController
+        let videoType : RunningTimeController = segue.destinationViewController as! RunningTimeController
         videoType.videoTypeVar = videoTypeVar
         
         

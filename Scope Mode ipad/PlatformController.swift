@@ -70,16 +70,16 @@ class PlatformController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : DescriptionController = segue.destinationViewController as! DescriptionController
+        let projectTitle : BudgetController = segue.destinationViewController as! BudgetController
         projectTitle.hiddenProjectVar = hiddenProjectVar
         
-        let videoType : DescriptionController = segue.destinationViewController as! DescriptionController
+        let videoType : BudgetController = segue.destinationViewController as! BudgetController
         videoType.videoTypeVar = videoTypeVar
         
-        let budget : DescriptionController = segue.destinationViewController as! DescriptionController
+        let budget : BudgetController = segue.destinationViewController as! BudgetController
         budget.budgetVar = budgetVar
         
-        let platform : DescriptionController = segue.destinationViewController as! DescriptionController
+        let platform : BudgetController = segue.destinationViewController as! BudgetController
         platform.platformVar = platformVar
         
     }

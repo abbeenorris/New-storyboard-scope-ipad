@@ -14,19 +14,19 @@ class DescriptionController: UIViewController {
     }
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : StyleController = segue.destinationViewController as! StyleController
+        let projectTitle : PartProductionController = segue.destinationViewController as! PartProductionController
         projectTitle.hiddenProjectVar = hiddenProjectVar
         
-        let videoType : StyleController = segue.destinationViewController as! StyleController
+        let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
         videoType.videoTypeVar = videoTypeVar
         
-        let budget : StyleController = segue.destinationViewController as! StyleController
+        let budget : PartProductionController = segue.destinationViewController as! PartProductionController
         budget.budgetVar = budgetVar
         
-        let platform : StyleController = segue.destinationViewController as! StyleController
+        let platform : PartProductionController = segue.destinationViewController as! PartProductionController
         platform.platformVar = platformVar
         
-        let description : StyleController = segue.destinationViewController as! StyleController
+        let description : PartProductionController = segue.destinationViewController as! PartProductionController
         description.descriptionVar = descriptionText.text!
         
     }

@@ -4,7 +4,12 @@ import MessageUI
 
 class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var hiddenProjectVar =  String()
+    var videoTypeVar = String()
+    var budgetVar = String()
+    var platformVar = String()
     var projectTitle = String()
+    
+    
     
     
     override func viewDidLoad() {
@@ -12,8 +17,6 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         projectTitle = hiddenProjectVar
     }
-    
-    
     
     
     
@@ -55,6 +58,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
     }
     //end email
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let projectTitle : SummaryController = segue.destinationViewController as! SummaryController
+        projectTitle.hiddenProjectVar = hiddenProjectVar
+    }
     
 }

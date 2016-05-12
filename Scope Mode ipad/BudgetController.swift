@@ -5,7 +5,7 @@ class BudgetController: UIViewController {
     var hiddenProjectVar =  String()
     var videoTypeVar = String()
     var budgetVar = String()
-    
+    var platformVar = String()
     
     @IBOutlet weak var budgetSlider: UISlider!
     @IBOutlet weak var budgetLabel: UILabel!
@@ -21,13 +21,13 @@ class BudgetController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : PlatformController = segue.destinationViewController as! PlatformController
+        let projectTitle : ContactController = segue.destinationViewController as! ContactController
         projectTitle.hiddenProjectVar = hiddenProjectVar
         
-        let videoType : PlatformController = segue.destinationViewController as! PlatformController
+        let videoType : ContactController = segue.destinationViewController as! ContactController
         videoType.videoTypeVar = videoTypeVar
         
-        let budget : PlatformController = segue.destinationViewController as! PlatformController
+        let budget : ContactController = segue.destinationViewController as! ContactController
         budget.budgetVar = budgetVar
         
         
