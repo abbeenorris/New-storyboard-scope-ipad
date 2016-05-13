@@ -9,8 +9,15 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate {
     
     
     @IBOutlet weak var runningTimePicker: UIDatePicker!
+    @IBAction func runningTimePickerTime(sender: AnyObject) {
+       
+        
+        
+        
+    }
     
-
+    
+    
   
     
     

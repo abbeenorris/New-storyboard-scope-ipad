@@ -1485,6 +1485,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="484778511.71709299">
                                     <!--2016-05-12 20:41:51 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="runningTimePickerTime:" destination="OAy-rf-7K7" eventType="valueChanged" id="46B-yI-tLE"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
