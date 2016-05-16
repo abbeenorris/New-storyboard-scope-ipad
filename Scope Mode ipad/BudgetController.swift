@@ -5,6 +5,7 @@ class BudgetController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     var platformVar = String()
     var budgetVar = String()
     
@@ -31,6 +32,9 @@ class BudgetController: UIViewController {
         
         let videoType : ContactController = segue.destinationViewController as! ContactController
         videoType.videoTypeVar = videoTypeVar
+        
+        let runningTime : ContactController = segue.destinationViewController as! ContactController
+        runningTime.timeVar = timeVar
         
         let budget : ContactController = segue.destinationViewController as! ContactController
         budget.budgetVar = budgetVar

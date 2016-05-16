@@ -5,6 +5,7 @@ class PartProductionController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class PartProductionController: UIViewController {
         
         let videoType : StyleController = segue.destinationViewController as! StyleController
         videoType.videoTypeVar = videoTypeVar
+        
+        let runningTime : StyleController = segue.destinationViewController as! StyleController
+        runningTime.timeVar = timeVar
         
     }
 }

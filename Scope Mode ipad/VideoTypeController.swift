@@ -5,7 +5,7 @@ class VideoTypeController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
         
         

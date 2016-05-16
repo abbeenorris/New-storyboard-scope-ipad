@@ -9,18 +9,20 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate {
     
     
     @IBOutlet weak var runningTimePicker: UIDatePicker!
+    let timeFormatter = NSDateFormatter()
     @IBAction func runningTimePickerTime(sender: AnyObject) {
-       
-        
-        
-        
+        setTime()
     }
     
     
     
   
     
-    
+    func setTime() {
+        timeFormatter.dateFormat = "HH:mm:ss"
+        timeVar = timeFormatter.stringFromDate(runningTimePicker.date)
+    }
+
     
     
     override func viewDidLoad() {
