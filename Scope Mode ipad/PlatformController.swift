@@ -5,6 +5,7 @@ class PlatformController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     var platformVar = String()
     
     
@@ -80,6 +81,9 @@ class PlatformController: UIViewController {
         
         let videoType : BudgetController = segue.destinationViewController as! BudgetController
         videoType.videoTypeVar = videoTypeVar
+        
+        let runningTime : BudgetController = segue.destinationViewController as! BudgetController
+        runningTime.timeVar = timeVar
         
         let platform : BudgetController = segue.destinationViewController as! BudgetController
         platform.platformVar = platformVar

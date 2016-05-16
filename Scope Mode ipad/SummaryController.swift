@@ -5,6 +5,7 @@ class SummaryController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     var platformVar = String()
     var budgetVar = String()
     
@@ -28,6 +29,13 @@ class SummaryController: UIViewController {
         
         
         projectText.text! = projectTitleVar
+        //clientText.text! = clientNameVar
+        videoTypeText.text! = videoTypeVar
+        //timeText.text! = timeVar
+        platformText.text! = platformVar
+        budgetText.text! = budgetVar
+        runningTimeText.text! = timeVar
+        
         
     }
     

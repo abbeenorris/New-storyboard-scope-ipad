@@ -5,6 +5,7 @@ class CharactersController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class CharactersController: UIViewController {
         
         let videoType : PlatformController = segue.destinationViewController as! PlatformController
         videoType.videoTypeVar = videoTypeVar
+        
+        let runningTime : PlatformController = segue.destinationViewController as! PlatformController
+        runningTime.timeVar = timeVar
     }
     
 }

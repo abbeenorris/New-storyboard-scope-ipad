@@ -9,7 +9,6 @@ class DeadlineController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           print(timeVar)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -21,6 +20,9 @@ class DeadlineController: UIViewController {
         
         let videoType : DescriptionController = segue.destinationViewController as! DescriptionController
         videoType.videoTypeVar = videoTypeVar
+       
+        let runningTime : DescriptionController = segue.destinationViewController as! DescriptionController
+        runningTime.timeVar = timeVar
         
     }
 }

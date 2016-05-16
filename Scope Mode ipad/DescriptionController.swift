@@ -5,6 +5,7 @@ class DescriptionController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     @IBOutlet weak var descriptionText: UITextView!
     
     override func viewDidLoad() {
@@ -21,6 +22,9 @@ class DescriptionController: UIViewController {
         
         let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
         videoType.videoTypeVar = videoTypeVar
+        
+        let runningTime : PartProductionController = segue.destinationViewController as! PartProductionController
+        runningTime.timeVar = timeVar
         
     }
 }

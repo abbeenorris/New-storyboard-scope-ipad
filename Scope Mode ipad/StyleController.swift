@@ -7,6 +7,7 @@ class StyleController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
     var videoTypeVar = String()
+    var timeVar = String()
     
     
     
@@ -27,6 +28,9 @@ class StyleController: UIViewController {
             
             let videoType : CharactersController = segue.destinationViewController as! CharactersController
             videoType.videoTypeVar = videoTypeVar
+            
+            let runningTime : CharactersController = segue.destinationViewController as! CharactersController
+            runningTime.timeVar = timeVar
         }
         
         if segue.identifier == "Animation" {
