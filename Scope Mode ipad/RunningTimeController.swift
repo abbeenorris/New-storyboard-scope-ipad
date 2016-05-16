@@ -11,7 +11,7 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var runningTimePicker: UIDatePicker!
     let timeFormatter = NSDateFormatter()
     func setTime() {
-        timeFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        timeFormatter.dateFormat = "HH:mm:ss"
         timeVar = timeFormatter.stringFromDate(runningTimePicker.date)
     }
     
